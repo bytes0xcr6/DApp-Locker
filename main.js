@@ -1,7 +1,5 @@
 const submit = document.querySelector(".button-lock");
 
-
-submit.addEventListener("click", () =>  {
-
-    console.log("Clicked");
+submit.addEventListener("click", () => {
+  console.log("Clicked");
 });

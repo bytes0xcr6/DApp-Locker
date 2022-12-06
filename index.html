@@ -1,59 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>DApp</title>
-    <link rel="stylesheet" href="styles/style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <header class="header">
-        <!-- <img class ="header-img" src="imgs/pexels-kelly-2583373.jpg"> -->
-        <div class="pages">
-            <button class="page-selected hidde">1</button>
-            <button class="page-selected hidde">2</button>
-            <button class="page-selected hidde">3</button>
-            <button class="page-selected hidde">4</button>
-        </div>
+      <!-- <img class ="header-img" src="imgs/pexels-kelly-2583373.jpg"> -->
+      <div class="pages">
+        <button class="page-selected hidde">1</button>
+        <button class="page-selected hidde">2</button>
+        <button class="page-selected hidde">3</button>
+        <button class="page-selected hidde">4</button>
+      </div>
     </header>
     <main class="main">
-        <div class="container">
-            <div class="container-elements">
-                <h1> CRYPTO LOCKER</h1>
-                <div class="subtext">
-                    <h3 >Lock up your cryptos for a set period of time.</h3>
-                    <h3 >Your keys, your coins!</h3>
-                </div>
-                <div class="inputs-container">
-                    
-                    <div class="inputs">
-                        <p class="input-name">Crypto to Stake</p>
-                        <select name="Asset" id="">
-                            <option value="WBTC">Bitcoin</option>
-                            <option value="ETH">Ethers</option>
-                        </select>
-                    </div>    
-                    
-                    <div class="inputs">
-                        
-                        <p class="input-name">How many days?</p>
-                        <input type="number" value="eg. example@gmail.com"/>
-                    </div>
-                        <div class="inputs">
-                            <p class="input-name">Amount to lock</p>
-                            <input type="number" value="e.g. 1 BTC">
-                        </div>
-                        <div class="submit-buttons">
-                        </div>
-                    </div>
-                    <button class="button hidde">Back</button>
-                    <button class="button button-lock">Lock! </button>
-                </div>
+      <div class="container">
+        <div class="container-elements">
+          <h1>CRYPTO LOCKER</h1>
+          <div class="subtext">
+            <h3>Lock up your cryptos for a set period of time.</h3>
+            <h3>Your keys, your coins!</h3>
+          </div>
+          <div class="inputs-container">
+            <div class="inputs">
+              <p class="input-name">Crypto to Stake</p>
+              <select name="Asset" id="">
+                <option value="WBTC">Bitcoin</option>
+                <option value="ETH">Ethers</option>
+              </select>
             </div>
-        </main>
-        
-        <script src="main.js"></script>
-    </body>
+
+            <div class="inputs">
+              <p class="input-name">How many days?</p>
+              <input type="number" value="eg. example@gmail.com" />
+            </div>
+            <div class="inputs">
+              <p class="input-name">Amount to lock</p>
+              <input type="number" value="e.g. 1 BTC" />
+            </div>
+            <div class="submit-buttons"></div>
+          </div>
+          <button class="button hidde">Back</button>
+          <button class="button button-lock">Lock!</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
 </html>
