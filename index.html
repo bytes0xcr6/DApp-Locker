@@ -24,17 +24,26 @@
       </div>
     </header>
     <main class="main">
+      <div class="blob">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#f2ab91"
+            d="M47.3,-14.2C55.6,10.1,52.6,39.2,36.5,51.1C20.5,62.9,-8.7,57.6,-27.5,42.8C-46.3,27.9,-54.8,3.7,-48.5,-17.9C-42.1,-39.5,-21.1,-58.4,-0.8,-58.2C19.5,-57.9,39,-38.5,47.3,-14.2Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
       <div class="container">
         <div class="container-elements">
           <h1>CRYPTO LOCKER</h1>
           <div class="subtext">
             <h3>Lock up your cryptos for a set period of time.</h3>
-            <h3>Your keys, your coins!</h3>
+            <h3>&#128526; Forget about FOMO. &#128526;</h3>
           </div>
           <div class="inputs-container">
             <div class="inputs">
               <p class="input-name">Crypto to Stake</p>
-              <select name="Asset" id="">
+              <select name="asset" id="asset">
                 <option value="WBTC">Bitcoin</option>
                 <option value="ETH">Ethers</option>
               </select>
@@ -42,19 +51,30 @@
 
             <div class="inputs">
               <p class="input-name">How many days?</p>
-              <input type="number" value="eg. example@gmail.com" />
+              <input type="number" id="lockPeriod" value="" required />
             </div>
             <div class="inputs">
               <p class="input-name">Amount to lock</p>
-              <input type="number" value="e.g. 1 BTC" />
+              <input type="number" id="amount" value="e.g. 1 BTC" required />
             </div>
             <div class="submit-buttons"></div>
           </div>
-          <button class="button hidde">Back</button>
           <button class="button button-lock">Lock!</button>
         </div>
       </div>
+      <div class="blob blob2">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill="#f2ab91"
+            d="M42,-18.5C47.2,2.3,39.2,22.6,21.2,37.7C3.2,52.8,-24.7,62.6,-38.5,52.6C-52.3,42.7,-51.9,13,-43.1,-12.8C-34.4,-38.6,-17.2,-60.4,0.6,-60.6C18.4,-60.8,36.8,-39.4,42,-18.5Z"
+            transform="translate(100 100)"
+          />
+        </svg>
+      </div>
     </main>
+    <footer>
+      <span>Made by <a href="" target="_blank">Cristian Richarte Gil</a> </span>
+    </footer>
 
     <script src="main.js"></script>
   </body>
