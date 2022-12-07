@@ -12,6 +12,10 @@
     />
     <title>DApp</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -35,16 +39,16 @@
       </div>
       <div class="container">
         <div class="container-elements">
-          <h1>CRYPTO LOCKER</h1>
+          <h1>ETHERS LOCKER</h1>
           <div class="subtext">
-            <h3>Lock up your cryptos for a set period of time.</h3>
+            <h3>Lock up your Ethers for a set period of time.</h3>
             <h3>&#128526; Forget about FOMO. &#128526;</h3>
           </div>
-          <div class="inputs-container">
+          <div class="inputs-container hidde">
             <div class="inputs">
               <p class="input-name">Crypto to Stake</p>
               <select name="asset" id="asset">
-                <option value="WBTC">Bitcoin</option>
+                <!-- <option value="WBTC">Bitcoin</option> -->
                 <option value="ETH">Ethers</option>
               </select>
             </div>
@@ -55,11 +59,18 @@
             </div>
             <div class="inputs">
               <p class="input-name">Amount to lock</p>
-              <input type="number" id="amount" value="e.g. 1 BTC" required />
+              <input type="number" id="amount" value="" required />
             </div>
             <div class="submit-buttons"></div>
           </div>
-          <button class="button button-lock">Lock!</button>
+          <div class="buttons">
+            <button class="button button-connect" onclick="connect()">
+              Connect Wallet!
+            </button>
+            <button class="button button-lock hidde">
+              Lock up your Ethers!
+            </button>
+          </div>
         </div>
       </div>
       <div class="blob blob2">
@@ -75,7 +86,6 @@
     <footer>
       <span>Made by <a href="" target="_blank">Cristian Richarte Gil</a> </span>
     </footer>
-
-    <script src="main.js"></script>
   </body>
+  <script src="main.js"></script>
 </html>
